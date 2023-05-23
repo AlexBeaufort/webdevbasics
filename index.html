@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Web Dev Basics</title>
+    </head>
+<body>
+  <header> 
+    <div id="header">
+        <h1 id="page-header">Web Dev Basics</h1>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <div class="border"></div>
+                <li><a href="#getting-started">Getting started</a></li>
+                <div class="border"></div>
+                <li><a href="#starting-page">Starting the HTML page</a></li>
+                <div class="border"></div>
+                <li><a href="#inside-body">Inside the body</a></li>
+                <div class="border"></div>
+                <li><a href="#styling-css">Styling with CSS</a></li>
+                <div class="border"></div>
+                <li><a href="#ids">IDs and Classes</a></li>
+                 <div class="border"></div>
+                <li><a href="#selectors">Selectors</a></li>
+                    <div class="border"></div>
+                <li><a href="#colors">Colors</a></li>
+                    <div class="border"></div>
+                <li><a href="#font-style">Font styling</a></li>
+                    <div class="border"></div>
+                <li><a href="#positioning">Alignment/Positioning</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    </header>
+<main>
+    <h1 id="welcome" class="primary-header">Welcome</h1>
+    <p>Hello! This website is here to teach you the basics of HTML and CSS. 
+        There are many programming languages out there, but these are the 
+        two most suitable for creating web pages. HTML stands for Hypertext 
+        Markup Language, and it can do many things. You can use HTML to make 
+        headings, paragraphs, tables, buttons, pictures, and many more. 
+        Basically, if you were to look at a web page and take away all the 
+        decorations like alignment, spacing, font, color, et cetera, you would 
+        be left with the HTML. CSS stands for Cascading Style Sheets, and this 
+        is what creates the decorations, it's what makes a website look good. 
+        Like I said earlier, it's the alignment, spacing, font, colors, size, 
+        borders, and more.</p>
+    
+    <h1 id="getting-started" class="primary-header">Getting started</h1>
+    <p>When wanting to program a website, you might find yourself asking, 
+        where do I go to write my code? When using any programming language, 
+        you must type it in a text editor. A text editor is exactly what it sounds
+        like, it's a place where you can edit text and save it as a file on your 
+        computer. Some common examples are Microsoft Word or your computer's Notepad. 
+        These editors are preliminary, they don't really do anything to help you, 
+        that's why I recommend using an editor like Sublime Text Editor, Visual Studio
+        Code, or Notepad++. What makes these editors so good is that they are free,
+        and they color code. By this, I mean that instead of all your code being in 
+        black and white, once the editor knows what language you are writing in, it
+        will automatically color code everything so that it is easy to distinguish. 
+        Also, when typing a command, it will show you options that you can click to 
+        have it finish for you, it works just like the suggestions bar on your phone 
+        keyboard. In order to activate these features when coding a website, save the 
+        document as a (insert name here).html file. Saving the document this way is 
+        also how you save it in order to see what you have been working on. Once you 
+        save it as a .html file you open it usually with Chrome but you can with pretty 
+        much any browser.</p>
+
+
+    <h1 id="starting-page" class="primary-header">Starting the HTML page</h1>
+    <p class="info">Once you have opened up the page and saved it as a .html file the first theing that 
+        you will put is &lt;!DOCTYPE html&gt;</p>
+        <ul>
+            <li>&lt;!DOCTYPE html&gt; - used to tell the computer that you are coding in the newest version of HTML and it is self closing meaning it has no end tag </li>
+        </ul>
+    <p class="info">After that you should put the html tag</p>
+    <ul>
+    
+        <li>&lt;html&gt; -  this is used to define that it is an html document and this will always be the first and last tag in your docutment</li>
+    </ul>
+    <p class="info">The first thing inside the html tag is &lt;head&gt;</p>
+    <ul>
+        <li>&lt;head&gt; - this is where you will put information about the document</li>
+    </ul>
+    <p class="info">One piece of info will be the title(goes inside the head)</p>
+    <ul>
+        <li>&lt;title&gt; -  what you put in here is what will be shown in the browser's title bar or a page's tab.</li>
+    </ul>
+    <p class="info"> Another piece of information that goes in the head is the meta tag</p>
+    <ul>
+        <li>&lt;meta charset="utf-8"&gt; - this lets the browser know what charachter set you are using </li>
+    </ul>
+    <p class="info">The last part of the set up is the body</p>
+    <ul>
+        <li>&lt;body&gt; - this is out side of the head and it is Where the rest of your html goes, most of your code will be in here </li>
+    </ul>
+    <div class="code-container">
+        <p class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            <span class="code-indent"> &lt;meta charset="utf-8"&gt;</span><br>
+            <span class="code-indent">&lt;title&gt; Insert title here &lt;/title&gt;</span><br>   `   
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </p>
+
+    </div>
+    <h1 id="inside-body" class="primary-header">Inside the body</h1>
+    <p class="info">Headings<p>
+    <ul>
+            <li>&lt;h1&gt; to &lt;h6&gt; - HTML headings, with the numbers relating to level of importance and size</li>
+    </ul>
+    <p class="info">Paragraphs</p>
+    <ul>
+        <li>&lt;p&gt; - this is used to make a paragraph, this line is a paragraph </li>
+    </ul>
+    <p class="info">Styling text </p>
+    <ul>
+        <li>&lt;strong&gt; - gives text a bolding </li>
+        <li>&lt;em&gt; - puts the text in italics</li>
+    </ul>
+    <p class="info">Images </p>
+    <ul>
+        <li>&lt;img src="" alt="" width=""&gt; - src is where you will put the image link(to do this find an image online, right click it and click copy image adress), alt is the alternate text that will show if the image cant load, and width is the width dimensions and it is self closing.</li>
+    </ul>
+    <p class="info">List </p>
+    <ul>
+        <li>&lt;ol&gt; - an ordered list, basicly numbered</li>
+        <li>&lt;ul&gt; - an unordered list, bullets</li>
+        <li>&lt;li&gt; - this is a list item, these go inside an ol or ul tag to make each item</li>
+    </ul>
+    <p class="info">Links </p>
+    <ul>
+        <li>&lt;a href=""&gt; - the href value is where you paste the link. You put text between the beginning and end tag and that text will be given that link. </li>
+    </ul>
+    <p class="info">Comments </p>
+    <ul>
+        <li>&lt;!-- (text here) --&gt; - omments are lines of code that the computer ingnores so they are just for organization.</li>
+    </ul>
+    <p class="info">Footer</p>
+    <ul>
+        <li>&lt;footer&gt; -   Adds a footer to the bottom of the page.</li>
+    </ul>
+    <p class="info"> </p>
+    <ul>
+        <li>&lt;head&gt; -  .</li>
+    </ul>
+    <h1 id="styling-css" class="primary-header">Styling With CSS</h1>
+    <p class="info" id="ids">IDs and Classes</p>
+    <p class="description"> Ids are used to give a specefic element that name, and only that one element
+        can have that name and it can be used to identify the element later. Classes 
+        are the same but they can be used with multiple elements. Class and ID names 
+        cant have spaces in them.</p>
+    <div class="code-container">
+        <p class="code">
+            &lt;h1 id="code"&gt; I like to code &lt;/h1&gt;<br>
+            &lt;p class="cool"&gt; I like to code &lt;/p&gt;<br>
+            &lt;h1 class="cool"&gt; I like to code &lt;/h1&gt;<br>
+            &lt;p id="milk"&gt; I like to code &lt;/p&gt;<br>
+        <p>
+    </div>
+    <h1 id="selectors" class="primary-header">Selectors</h1>
+    <p class="description">When you wan't to select an amount of code to change there are 4 ways to do it,
+     by element, by class, by ID and by decendant</p>
+     <div class="code-container">
+        <p>
+            p{<br>
+            <span class="code-indent">This selects all paragraph elements</span>    
+            }<br>
+            #milk{<br>
+            <span class="code-indent">This selects the element with ID milk</span>    
+            }<br>
+            .cool{<br>
+            <span class="code-indent">This selects all elements with class cool</span>    
+            }<br>
+        </p>
+    </div>
+        <h1 id="colors" class="primary-header">Colors</h1>
+        <p class="descripiton">Once you have selected what you want to change, inside 
+            the curly brackets is where you will put how you change it. When using 
+            color you will use a system called rgb(Red, Green, Blue). There are three 
+            values that are inside rgb parentheses that go from 0 ot 255, the lower the
+            number the darker the color and the higher the number the brighter the color</p>
+        
+        <ul>
+            <li><strong>color: rgb(255, 0, 0);</strong> - colors the text(these values make a bright red)</li>
+            <li><strong>background-color: rgb(255, 0, 0);</strong> - colors the background of the selected element</li>
+        </ul>
+        <h1 id="font-style" class="primary-header">Font-Styling</h1>
+        <p class="descripition">When looking at fonts there are 3 different kind
+             serif, sans-serif, and monospace. Sans fonts have an extra stroke 
+             or decorative design on the end of letters on famous example is Times 
+             New Roman, another is the Georgia font. Sans-serif has no extra stroke
+             or design, one famous example of this one is Arial and Helvetica. 
+             Monospace means that each letter, number and symbol take up the same 
+             amount of space the default font looks like a typewriter.</p>
+
+        <ul>
+            <li><strong>font-size: 16px;</strong> - font size is measured in pixels(16px is the default size of paragraps if you dont change it)</li>
+            <li><strong>font-family:"Arial", sans-serif;</strong> - the reason that I put sans-serif is for backup. Just incase the browser doesn't support that font I figured out which of the 3 categories that my font falls under and put that because the browser will choose another sans-serif font</li>
+            <li><strong>text-decoration-line: underline;</strong> - underlines text, could have also been overlineo r line-through. If you don't wan't a link to have an underline you can set it to none</li>
+            <li><strong>font-style: italics;</strong> - another way to slant text, also could have been oblique or normal(no slant)</li>
+            <li><strong>line-height: 15px;</strong> - line spacing</li>
+        </ul>
+        <h1 id="positioning" class="primary-header">Alignment/Positioning</h1>
+        <ul>
+            <li><strong>text-alignment: center;</strong> - this alings text 3 ways, left, right, and center</li>
+            <li><strong>margin: 20px;</strong> - increases margin, if you wan't to increase only one side add a dash(-)then bottom, top, left or right. If you but auto the browser will automaticly center the element(will not center text)</li>
+            <li><strong>padding: 20px;</strong> - increases padding, if you wan't to increase only one side add a dash(-)then bottom, top, left or right</li>
+            <li><strong>width: 40px or 80%;</strong> - width can be measured in pixels or in percent. Percent use that amout of space up. For example the white background of this page has a width of 70%</li>
+        </ul>
+    <img src="box-model-1.png" width="500"alt="box model">
+</main> 
+
+</body>
+</html>
